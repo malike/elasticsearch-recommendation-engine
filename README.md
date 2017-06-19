@@ -1,3 +1,9 @@
-# kibana_recommendation_engine_plugin
+# elasticsearch recommendation engine
 
- Recommendation Engine built to work with kibana and ElasticSearch
+Recommendation engine plugin built into elasticsearch.
+
+1. Weka
+
+2. Apache Spark
+
+3. Apache Mahout
