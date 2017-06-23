@@ -8,7 +8,7 @@
     <artifactId>st.malike</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>Plugin: Recommendation Engine</name>
-    <description>A plugin to generate PDF reports with ElasticSearch</description>
+    <description>A plugin to learn and generate recommendations</description>
 
 
     <properties>
