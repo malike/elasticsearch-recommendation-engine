@@ -5,7 +5,6 @@ import org.elasticsearch.plugins.Plugin;
 import org.elasticsearch.rest.RestHandler;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -13,11 +12,9 @@ import java.util.List;
  */
 public class ElasticRecommendationEnginePlugin extends Plugin implements ActionPlugin {
 
-
     @Override
     public List<Class<? extends RestHandler>> getRestHandlers() {
-        return Arrays.asList(GetRecommendedItemsRestAction.class, LearnRestActionTest.class);
+        return Arrays.asList(FetchRecommendedRestAction.class, LearnRestAction.class);
     }
-
 
 }

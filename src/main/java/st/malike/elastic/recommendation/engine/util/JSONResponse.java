@@ -1,4 +1,4 @@
-package st.malike.elastic.recommendation.engine.data;
+package st.malike.elastic.recommendation.engine.util;
 
 import org.elasticsearch.common.xcontent.ToXContent;
 import org.elasticsearch.common.xcontent.XContentBuilder;

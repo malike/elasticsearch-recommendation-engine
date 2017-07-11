@@ -5,7 +5,7 @@ import org.elasticsearch.common.inject.Inject;
 import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.common.xcontent.XContentBuilder;
 import org.elasticsearch.rest.*;
-import st.malike.elastic.recommendation.engine.data.JSONResponse;
+import st.malike.elastic.recommendation.engine.util.JSONResponse;
 
 import java.io.IOException;
 
@@ -14,10 +14,10 @@ import static org.elasticsearch.rest.RestRequest.Method.GET;
 /**
  * malike_st.
  */
-public class GetRecommendedItemsRestAction extends BaseRestHandler {
+public class FetchRecommendedRestAction extends BaseRestHandler {
 
     @Inject
-    public GetRecommendedItemsRestAction(Settings settings, RestController controller) {
+    public FetchRecommendedRestAction(Settings settings, RestController controller) {
         super(settings);
         controller.registerHandler(GET, "/_getrecommended", this);
     }

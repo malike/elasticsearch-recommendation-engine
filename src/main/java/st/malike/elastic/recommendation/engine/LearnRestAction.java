@@ -14,10 +14,10 @@ import static org.elasticsearch.rest.RestRequest.Method.GET;
 /**
  * malike_st.
  */
-public class LearnRestActionTest extends BaseRestHandler {
+public class LearnRestAction extends BaseRestHandler {
 
     @Inject
-    public LearnRestActionTest(Settings settings, RestController controller) {
+    public LearnRestAction(Settings settings, RestController controller) {
         super(settings);
         controller.registerHandler(GET, "/_learn", this);
     }
