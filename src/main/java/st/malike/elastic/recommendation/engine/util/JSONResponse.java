@@ -6,7 +6,7 @@ import org.elasticsearch.common.xcontent.XContentBuilder;
 import java.io.IOException;
 
 /**
- * malike_st.
+ * @author malike_st
  */
 public class JSONResponse implements ToXContent {
 

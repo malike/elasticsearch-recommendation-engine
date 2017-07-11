@@ -10,17 +10,17 @@ import st.malike.elastic.recommendation.engine.util.JSONResponse;
 
 import java.io.IOException;
 
-import static org.elasticsearch.rest.RestRequest.Method.GET;
+import static org.elasticsearch.rest.RestRequest.Method.POST;
 
 /**
  * @author malike_st
  */
-public class FetchRecommendedRestAction extends BaseRestHandler {
+public class LearnRecommendationRestAction extends BaseRestHandler {
 
     @Inject
-    public FetchRecommendedRestAction(Settings settings, RestController controller) {
+    public LearnRecommendationRestAction(Settings settings, RestController controller) {
         super(settings);
-        controller.registerHandler(GET, "/_getrecommendation", this);
+        controller.registerHandler(POST, "/_learnrecommendation", this);
     }
 
     @Override

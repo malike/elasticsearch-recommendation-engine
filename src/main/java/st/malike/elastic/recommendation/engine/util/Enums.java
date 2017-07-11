@@ -1,7 +1,20 @@
 package st.malike.elastic.recommendation.engine.util;
 
 /**
- * malike_st.
+ * @author malike_st
  */
 public class Enums {
+
+    public enum JSONResponseMessage {
+        SUCCESS,
+        MISSING_PARAM,
+        ERROR
+    }
+
+
+    public enum RecommendatationEngine{
+        WEKA,
+        SPARK,
+        MAHOUT
+    }
 }
